@@ -8,14 +8,14 @@ on:
 jobs:
   web-deploy:
     name: Deploy Website Files
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
       - name: Sync Files via SFTP
-        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
+        uses: SamKirkland/FTP-Deploy-Action@v4.4.0
         with:
           host: ${{ secrets.FTP_SERVER_HOST }}
           username: ${{ secrets.FTP_USERNAME }}
