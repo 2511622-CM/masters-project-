@@ -1,0 +1,86 @@
+/* CSS for Pixel Pantry
+Created 9/7 by Courtney Morrison */
+
+/*header and body text*/
+h1 {
+    font-family: "abril-text", serif;
+    font-weight: 700;
+    font-style: normal;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+h2 {
+    font-family: "abril-text", serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+p {
+    font-family: "abril-text", serif;
+    font-weight: 400;
+    font-style: normal; 
+}
+/*logo*/
+.logo_main {
+    display: block;
+    margin: auto;
+    width: 25%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: left;
+}
+
+.logo_mini {
+    display: block;
+    margin: auto;
+    height: 75px;
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: left;
+}
+
+.button_design {
+    background-color: #339900;
+    border: 2px solid #339900;
+    color: #111111;
+    padding: 12px 24px;
+    font-family: "abril-text", serif;
+    font-weight: 400;
+    font-style: normal; 
+    text-align: center;
+    border-radius: 16px;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 12pt;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.button_design:hover,
+.button_design:visited:hover {
+    background-color: #a3d58a;
+    color: #111111;
+    border-color: #339900;
+}
+
+.photo_img {
+    clip-path: circle(50%);
+}
+
+th, td {
+  padding: 5px;
+  vertical-align: middle;
+}
+/*footer*/
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
