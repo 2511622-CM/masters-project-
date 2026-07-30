@@ -8,7 +8,7 @@ on:
 jobs:
   web-deploy:
     name: Deploy Website Files
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
 
     steps:
       - name: Checkout Repository
@@ -23,4 +23,3 @@ jobs:
           port: 22
           source: "."
           target: "/home/2511622/public_html/"
-          
