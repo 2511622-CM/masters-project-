@@ -44,12 +44,20 @@ include ('components.php');
 </header>
 
 <body>
+<<<<<<< HEAD
   <h1 class="h1">Efficient Online Shopping demo testing</h1>
+=======
+  <h1 class="h1">Efficient Online Shopping CHANGE V2</h1>
+>>>>>>> 1d070de (automation testing)
 
   <!--Card Layout -->
   <main class="container my-4">
     <section class="mb-5">
+<<<<<<< HEAD
       <h2 class="mb-3"> Browse Categories 2</h2>
+=======
+      <h2 class="mb-3"> Browse Categoriesxs</h2>
+>>>>>>> 1d070de (automation testing)
       <?php category_cards($conn); ?>
     </section>
   </main>
