@@ -1,0 +1,40 @@
+name: Pipeline
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    name: Trigger Deployment
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+    
+      - name: Trigger Remote Webhook
+        env:
+          WEBHOOK_URL: ${{ secrets.DEPLOY_WEBHOOK_URL }}
+          WEBHOOK_SECRET: ${{ secrets.DEPLOY_WEBHOOK_SECRET }}
+          GH_TOKEN: ${{ secrets.CUSTOM_GITHUB_TOKEN }}
+        run: |
+          PAYLOAD=$(jq -n --arg token "$GH_TOKEN" '{inputs: {github_token: $token}}')
+          SIGNATURE=$(echo -n "$PAYLOAD" | openssl dgst -sha256 -hmac "$WEBHOOK_SECRET" | sed 's/(stdin)= //')
+
+          echo "Sending Trigger to server..."
+          RESPONSE=$(curl -s -w "\nHTTP_STATUS:%{http_code}" -X POST "$WEBHOOK_URL" \
+            -H "Content-type: application/json" \
+            -H "X-Hub-Signature-256: sha256=$SIGNATURE" \
+            -d "$PAYLOAD")
+
+          HTTP_STATUS=$(echo "$RESPONSE" | grep "HTTP_STATUS" | awk -F: '{print $2}')
+          BODY = $(echo "$RESPONSE" | sed '/HTTP_STATUS/d')
+
+          echo "Server Response: $BODY"
+
+          if [ "$HTTP_STATUS" -ne 200 ]; then
+          echo "Deployment failed with HTTP status: "$HTTP_STATUS"
+          exit 1
+          fi
