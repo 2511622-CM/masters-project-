@@ -1,0 +1,24 @@
+name: Cloud SFTP Deployment
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    name: Upload Files to University Server
+    runs-on: ubuntu-latest                         
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Deploy via SFTP (sshpass + scp)
+        env:
+          HOST: ${{ secrets.FTP_SERVER_HOST }}
+          USER: ${{ secrets.FTP_USERNAME }}
+          PASS: ${{ secrets.FTP_PASSWORD }}
+          TARGET: '/home/2511622/public_html/'                    
+        run: |
+          sshpass -p "$PASS" scp -P 22 -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -r ./ $USER@$HOST:$TARGET
