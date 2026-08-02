@@ -1,11 +1,11 @@
 <!--
 Created by Courtney Morrison: 26-07-2026
-Last edit 26-07-2026
+Last edit 02-07-2026
 
 Categories
 -->
 <?php
-include ('config.php');
+include ('configv3.php');
 include ('components.php');
 
 $category_name = isset($_GET['category']) ? trim($_GET['category']) : '';
