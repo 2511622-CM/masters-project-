@@ -44,7 +44,7 @@ include ('components.php');
 </header>
 
 <body>
-  <h2 class="h2">Efficient Online Shopping - This is an automated update. Testing 123</h2>
+  <h2 class="h2">Efficient Online Shopping - This is an automated update. Testing 123 4</h2>
 
   <!--Card Layout -->
   <main class="container my-4">
