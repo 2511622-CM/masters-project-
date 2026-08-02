@@ -91,7 +91,7 @@ if (!$product) {
 <body>
   <!-- Creating product card-->
   <div class="padding">
-    <div class="card" style="width: auto;">
+    <div class="card w-25">
       <img src="<?php echo $image_src; ?>" alt="<?php echo htmlspecialchars($product['product_name']); ?>">
       <div class="card-body">
         <h2 class="card-title"><?php echo htmlspecialchars($product['product_name']); ?></h2>
@@ -100,15 +100,15 @@ if (!$product) {
       <ul class="list-group list-group-flush">
         <li class="list-group-item"><strong>Category:</strong> <?php echo htmlspecialchars($product['category']); ?></li>
         <li class="list-group-item"><strong>Price:</strong> £<?php echo number_format($product['product_price'], 2); ?></li>
+        <li class="list-group-item"><button class="button_design" onclick="alert('Added to basket!')"> Add to Basket</button></li>
       </ul>
       <div class="card-body">
         <a href="category.php?category=<?php echo urlencode($product['category']); ?>" class="card-link">
-          Back to <?php echo htmlspecialchars($product['category']); ?>
+          <- Back to <?php echo htmlspecialchars($product['category']); ?>
         </a>
       </div>
     </div>
   </div>
-      <button class="button_design" onclick="alert('Added to basket!')"> Add to Basket</button>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 
