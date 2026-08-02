@@ -49,7 +49,7 @@ include ('components.php');
   <!--Card Layout -->
   <main class="container my-4">
     <section class="mb-5">
-      <h2 class="mb-3"> Browse Categories TEST</h2>
+      <h2 class="mb-3"> Browse Categories TESts</h2>
       <?php category_cards($conn); ?>
     </section>
   </main>
