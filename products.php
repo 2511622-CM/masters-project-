@@ -90,7 +90,7 @@ if (!$product) {
 
 <body>
   <!-- Creating product card-->
-  <div class="card" style="width: 18rem;">
+  <div class="card" style="width: auto;">
     <img src="<?php echo $image_src; ?>" alt="<?php echo htmlspecialchars($product['product_name']); ?>">
     <div class="card-body">
       <h2 class="card-title"><?php echo htmlspecialchars($product['product_name']); ?></h2>
