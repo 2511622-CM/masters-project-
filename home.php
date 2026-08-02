@@ -44,7 +44,7 @@ include ('components.php');
 </header>
 
 <body>
-  <h2 class="h2">Efficient Online Shopping - This is an automated update. Testing 1234 5 46336 7 8 9</h2>
+  <h2 class="h2">Efficient Online Shopping</h2>
 
   <!--Card Layout -->
   <main class="container my-4">
