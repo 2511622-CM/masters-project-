@@ -67,7 +67,7 @@ if (!$product) {
       </div>
     </div>
   </nav>
-  <h1>Welcome to Pixel Pantry</h1>
+  <h1>Welcome to Pixel Pantry update test</h1>
   <!-- Creating breaddcrumbs-->
   <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
