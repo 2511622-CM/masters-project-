@@ -1,0 +1,15 @@
+# --- Server Configurations & Secrets ---
+config*.php
+config/
+.env
+
+# --- Local Operating System & IDE Files ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# --- Deployment & Temporary Files ---
+deploy_temp.zip
+temp_extract/
+*.log
