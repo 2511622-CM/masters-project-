@@ -5,7 +5,7 @@ Last edit 26-07-2026
 Products
 -->
 <?php
-include ('config.php');
+include ('configv3.php');
 include ('components.php');
 
 $category_name = trim($_GET['category'] ?? '');
