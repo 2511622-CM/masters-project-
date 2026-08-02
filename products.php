@@ -90,20 +90,22 @@ if (!$product) {
 
 <body>
   <!-- Creating product card-->
-  <div class="card" style="width: auto;">
-    <img src="<?php echo $image_src; ?>" alt="<?php echo htmlspecialchars($product['product_name']); ?>">
-    <div class="card-body">
-      <h2 class="card-title"><?php echo htmlspecialchars($product['product_name']); ?></h2>
-      <p class="card-text"><?php echo htmlspecialchars($product['product_desc']); ?></p>
-    </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item"><strong>Category:</strong> <?php echo htmlspecialchars($product['category']); ?></li>
-      <li class="list-group-item"><strong>Price:</strong> £<?php echo number_format($product['product_price'], 2); ?></li>
-    </ul>
-    <div class="card-body">
-      <a href="category.php?category=<?php echo urlencode($product['category']); ?>" class="card-link">
-        Back to <?php echo htmlspecialchars($product['category']); ?>
-      </a>
+  <div class="padding">
+    <div class="card" style="width: auto;">
+      <img src="<?php echo $image_src; ?>" alt="<?php echo htmlspecialchars($product['product_name']); ?>">
+      <div class="card-body">
+        <h2 class="card-title"><?php echo htmlspecialchars($product['product_name']); ?></h2>
+        <p class="card-text"><?php echo htmlspecialchars($product['product_desc']); ?></p>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item"><strong>Category:</strong> <?php echo htmlspecialchars($product['category']); ?></li>
+        <li class="list-group-item"><strong>Price:</strong> £<?php echo number_format($product['product_price'], 2); ?></li>
+      </ul>
+      <div class="card-body">
+        <a href="category.php?category=<?php echo urlencode($product['category']); ?>" class="card-link">
+          Back to <?php echo htmlspecialchars($product['category']); ?>
+        </a>
+      </div>
     </div>
   </div>
       <button class="button_design" onclick="alert('Added to basket!')"> Add to Basket</button>
