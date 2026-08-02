@@ -5,7 +5,7 @@ Last edit 26-07-2026
 Landing Page
 -->
 <?php
-include ('config.php');
+include ('configv3.php');
 include ('components.php');
 ?>
 
