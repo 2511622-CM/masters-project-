@@ -45,10 +45,14 @@ include ('components.php');
 
 <body>
 <<<<<<< HEAD
+<<<<<<< HEAD
   <h1 class="h1">Efficient Online Shopping demo testing</h1>
 =======
   <h1 class="h1">Efficient Online Shopping CHANGE V2</h1>
 >>>>>>> 1d070de (automation testing)
+=======
+  <h1 class="h1">Efficient Online Shopping CHANGE V2</h1>
+>>>>>>> f93c38e (changed)
 
   <!--Card Layout -->
   <main class="container my-4">
