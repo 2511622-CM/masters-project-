@@ -2,7 +2,7 @@
 Created by Courtney Morrison: 02-07-2026
 Last edit 02-08-2026
 
-Landing Page
+Landing Page v2
 -->
 <?php
 include ('configv3.php');
@@ -44,12 +44,12 @@ include ('components.php');
 </header>
 
 <body>
-  <h2 class="h2">Efficient Online Shopping Demo test!</h2>
+  <h1 class="h1">Efficient Online Shopping CHANGE V2</h1>
 
   <!--Card Layout -->
   <main class="container my-4">
     <section class="mb-5">
-      <h2 class="mb-3"> Browse Categories</h2>
+      <h2 class="mb-3"> Browse Categories 2</h2>
       <?php category_cards($conn); ?>
     </section>
   </main>
