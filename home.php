@@ -57,11 +57,7 @@ include ('components.php');
   <!--Card Layout -->
   <main class="container my-4">
     <section class="mb-5">
-<<<<<<< HEAD
       <h2 class="mb-3"> Browse Categories 2</h2>
-=======
-      <h2 class="mb-3"> Browse Categoriesxs</h2>
->>>>>>> 1d070de (automation testing)
       <?php category_cards($conn); ?>
     </section>
   </main>
