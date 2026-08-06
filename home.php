@@ -44,19 +44,7 @@ include ('components.php');
 </header>
 
 <body>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  <h1 class="h1">Efficient Online Shopping demo testing</h1>
-=======
-  <h1 class="h1">Efficient Online Shopping CHANGE V2</h1>
->>>>>>> 1d070de (automation testing)
-=======
-  <h1 class="h1">Efficient Online Shopping CHANGE V2</h1>
->>>>>>> f93c38e (changed)
-=======
   <h1 class="h1">Efficient Online Shopping - s2 update 1 test</h1>
->>>>>>> e8c9f54 (ange)
 
   <!--Card Layout -->
   <main class="container my-4">
