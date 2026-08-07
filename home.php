@@ -50,7 +50,7 @@ include ('components.php');
   <main class="container my-4">
     <section class="mb-5">
       <h2 class="mb-3"> Browse Categories 2</h2>
-      <?php category_cards($conn); ?>
+      <?php category_cards($conn) ?>
     </section>
   </main>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
