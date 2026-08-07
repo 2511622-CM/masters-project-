@@ -44,7 +44,7 @@ include ('components.php');
 </header>
 
 <body>
-  <h1 class="h1">Efficient Online Shopping - Scenario 2 - testing number 2.0</h1>
+  <h1 class="h1">Efficient Online Shopping - Scenario 2 - testing number three</h1>
 
   <!--Card Layout -->
   <main class="container my-4">
