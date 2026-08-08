@@ -1,0 +1,25 @@
+name: PHP linter
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    name: Trigger Deployment
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v4
+
+    - name: Setup PHP
+      uses: shivammathur/setup-php@v2
+      with:
+        php-version: '8.2'
+    
+    - name: Check PHP Syntax
+      run: |
+        # Scans all .php files for sytnax errors or missing braces
+        find . -name "*.php" -exec php -l {} \;
