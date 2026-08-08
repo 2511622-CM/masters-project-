@@ -1,7 +1,10 @@
 name: Pipeline
 
 on:
-  push:
+  workflow_run:
+    workflows: ["PHP linter"]
+    types:
+      - completed
     branches:
       - main
   workflow_dispatch:
@@ -10,6 +13,7 @@ jobs:
   deploy:
     name: Trigger Deployment
     runs-on: ubuntu-latest
+    if: ${{  github.event.workflow_run.conclusion == 'success' || github.event_name == 'workflow_dispatch' }}
 
     steps:
       - name: Checkout Code
