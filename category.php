@@ -15,7 +15,7 @@ if (empty($category_name)) {
     exit;
 }
 
-$stmt = $conn->prepare("SELECT * FROM products WHERE LOWER(category) = LOWER(?)");
+$stmt = $conn->prepare("SELECT * FROM products WHERE LOWER(category) = LOWER(?)")
 $stmt->bind_param("s", $category_name);
 $stmt->execute();
 $result = $stmt->get_result(); ?>
