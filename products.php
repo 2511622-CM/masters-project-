@@ -6,7 +6,7 @@ Products
 -->
 <?php
 include ('configv3.php');
-include ('components.php');
+include ('components.php')
 
 $category_name = trim($_GET['category'] ?? '');
 $product_name  = trim($_GET['product_name'] ?? '');
@@ -24,7 +24,7 @@ $result = $stmt->get_result();
 $product = $result->fetch_assoc();
 
 $image_text = urlencode($product['product_name']);
-image_sorc = "https://placehold.co/300x300/EEE/31343C?font=pt-sans&text=" . $image_text;
+$image_src = "https://placehold.co/300x300/EEE/31343C?font=pt-sans&text=" . $image_text;
 
 if (!$product) {
     header("HTTP/1.0 404 not found");
