@@ -22,4 +22,4 @@ jobs:
     - name: Check PHP Syntax
       run: |
         # Scans all .php files for sytnax errors or missing braces
-        find . -name "*.php" -exec php -l {} \;
+        find . -name "*.php" -print0 | xargs -0 -n 1 -P 4 php -l
