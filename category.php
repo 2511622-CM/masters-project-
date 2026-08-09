@@ -16,8 +16,8 @@ if (empty($category_name)) {
 }
 
 $stmt = $conn->prepare("SELECT * FROM products WHERE LOWER(category) = LOWER(?)");
-$stmt->bind_param("s", $category_name)
-$stmt->execute()
+$stmt->bind_param("s", $category_name);
+$stmt->execute();
 $result = $stmt->get_result(); ?>
 
 <!DOCTYPE html>
@@ -64,7 +64,7 @@ $result = $stmt->get_result(); ?>
     </li>
 
     <li class="breadcrumb-item"> 
-         <?php echo htmlspecialchars($category_name); ?>
+         <?php echo htmlspecialchars($category_name)
     </li>
   </ol>
 </nav>
