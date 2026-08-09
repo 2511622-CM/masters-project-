@@ -64,7 +64,7 @@ $result = $stmt->get_result(); ?>
     </li>
 
     <li class="breadcrumb-item"> 
-         <?php echo htmlspecialchars($category_name)
+         <?php echo htmlspecialchars($category_name); ?>
     </li>
   </ol>
 </nav>
