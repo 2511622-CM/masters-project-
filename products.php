@@ -8,8 +8,8 @@ Products
 include ('configv3.php');
 include ('components.php');
 
-$category_name = trim($_GET['category'] ?? '');
-$product_name  = trim($_GET['product_name'] ?? '');
+$category_name = trim($_GET['category'] ?? '')
+$product_name  = trim($_GET['product_name'] ?? '')
 
 $stmt = $conn->prepare("SELECT * FROM products WHERE LOWER(product_name) = LOWER(?) AND LOWER(category) = LOWER(?)");
 //Catch the error before a crash
@@ -21,10 +21,10 @@ $stmt->bind_param("ss", $product_name, $category_name);
 $stmt->execute();
 
 $result = $stmt->get_result();
-$product = $result->fetch_assoc()
+$product = $result->fetch_assoc();
 
 $image_text = urlencode($product['product_name']);
-image_src = "https://placehold.co/300x300/EEE/31343C?font=pt-sans&text=" . $image_text
+$image_src = "https://placehold.co/300x300/EEE/31343C?font=pt-sans&text=" . $image_text;
 
 if (!$product) {
     header("HTTP/1.0 404 not found");
