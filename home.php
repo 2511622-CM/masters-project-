@@ -1,6 +1,6 @@
 <!--
 Created by Courtney Morrison: 02-07-2026
-Last edit 02-08-2026
+Last edit 16-08-2026
 
 Landing Page v2
 -->
@@ -44,12 +44,12 @@ include ('components.php');
 </header>
 
 <body>
-  <h1 class="h1">Efficient Online Shopping - Scenario 3</h1>
+  <h1 class="h1">Efficient Online Shopping</h1>
 
   <!--Card Layout -->
   <main class="container my-4">
     <section class="mb-5">
-      <h2 class="mb-3"> Browse Categories 2</h2>
+      <h2 class="mb-3"> Browse Categories</h2>
       <?php category_cards($conn); ?>
     </section>
   </main>

@@ -1,6 +1,6 @@
 <!--
 Created by Courtney Morrison: 20-07-2026
-Last edit 26-07-2026
+Last edit 16-08-2026
 
 Products
 -->
@@ -67,10 +67,10 @@ if (!$product) {
       </div>
     </div>
   </nav>
-  <h1>Welcome to Pixel Pantry update test</h1>
+  <h1 class="h1">Welcome to Pixel Pantry</h1>
   <!-- Creating breaddcrumbs-->
   <nav aria-label="breadcrumb">
-    <ol class="breadcrumb">
+    <ol class="breadcrumb justify-content-center">
 
       <li class="breadcrumb-item">
           <a href="home.php">Home</a>
@@ -91,7 +91,7 @@ if (!$product) {
 <body>
   <!-- Creating product card-->
   <div class="padding">
-    <div class="card w-25">
+    <div class="card w-25 mx-auto">
       <img src="<?php echo $image_src; ?>" alt="<?php echo htmlspecialchars($product['product_name']); ?>">
       <div class="card-body">
         <h2 class="card-title"><?php echo htmlspecialchars($product['product_name']); ?></h2>

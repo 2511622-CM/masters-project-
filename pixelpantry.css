@@ -1,13 +1,12 @@
 /* CSS for Pixel Pantry
-Created 9/7 by Courtney Morrison */
+Created 9/7 by Courtney Morrison
+Last edited 16/08/2026 */
 
 /*header and body text*/
 h1 {
     font-family: "abril-text", serif;
     font-weight: 700;
     font-style: normal;
-    display: flex;
-    flex-wrap: wrap;
     text-align: center;
 }
 
@@ -15,8 +14,6 @@ h2 {
     font-family: "abril-text", serif;
     font-weight: 400;
     font-style: normal;
-    display: flex;
-    flex-wrap: wrap;
     text-align: center;
 }
 
@@ -28,15 +25,13 @@ p {
 
 .site_padding{
     padding-left: 20px;
+    margin: auto;
 }
 /*logo*/
 .logo_main {
     display: block;
     margin: auto;
     width: 25%;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: left;
 }
 
 .logo_mini {
@@ -44,9 +39,6 @@ p {
     margin: auto;
     height: 75px;
     width: auto;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: left;
 }
 
 .button_design {
@@ -85,6 +77,8 @@ th, td {
 /*footer*/
 footer {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    text-align: center;
+    margin: 20px;
 }

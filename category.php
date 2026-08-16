@@ -57,7 +57,7 @@ $result = $stmt->get_result(); ?>
   <h1>Welcome to Pixel Pantry</h1>
 
 <nav aria-label="breadcrumb">
-  <ol class="breadcrumb">
+  <ol class="breadcrumb justify-content-center">
 
     <li class="breadcrumb-item">
         <a href="home.php">Home</a>
