@@ -44,13 +44,13 @@ include ('components.php');
 </header>
 
 <body>
-  <h1 class="h1">Efficient Online Shopping Update 1</h1>
+  <h1 class="h1">Efficient Online Shopping Update 2</h1>
 
   <!--Card Layout -->
   <main class="container my-4">
     <section class="mb-5">
       <h2 class="mb-3"> Browse Categories</h2>
-      <?php category_ca
+      <?php category_cards($conn); ?>
     </section>
   </main>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
